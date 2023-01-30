@@ -8,7 +8,7 @@
 
 //Suma
 let suma = 5 + 15;
-suma;
+console.log(suma); 
 
 //Suma de string
 let nombre = "Diego ";

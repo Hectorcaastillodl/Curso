@@ -39,7 +39,11 @@ console.log(saludar("Luzvelia"));
 let fondos = 1000;
 function retiroDeDinero(cantidad){
     fondos = fondos - cantidad; 
-    return `Retiraste ${cantidad}, tu saldo restante es ${fondos}`;
+    if (fondos <= 0) {
+        console.log(`La cantidad supera los fondos`);
+    }else{
+        return `Retiraste ${cantidad}, tu saldo restante es ${fondos}`;
+    }    
 }
 
 console.log(retiroDeDinero(230));
